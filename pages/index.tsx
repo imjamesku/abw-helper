@@ -8,7 +8,7 @@ export default function Home() {
   const day = date.getDate().toString();
   const dd = day.length === 1 ? "0" + day : day;
   const [userName, setUserName] = useState("ku.james");
-  const [status, setStatus] = useState("");
+  const [status, setStatus] = useState("請選擇`");
   const [company, setCompany] = useState("ktw");
   const [department, setDepartment] = useState("trd");
   // yymm.dd.[office|home|leave].[ktw/tbw/twm].[trd/mis/...]@username
@@ -42,7 +42,7 @@ export default function Home() {
         value={status}
         onChange={(e) => setStatus(e.target.value)}
       >
-        <option disabled selected value={""}>
+        <option disabled selected value={"請選擇"}>
           {" "}
           -- select an option --{" "}
         </option>
