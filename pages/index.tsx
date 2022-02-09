@@ -8,7 +8,7 @@ export default function Home() {
   const day = date.getDate().toString();
   const dd = day.length === 1 ? "0" + day : day;
   const [userName, setUserName] = useState("ku.james");
-  const [status, setStatus] = useState("請選擇`");
+  const [status, setStatus] = useState("請選擇");
   const [company, setCompany] = useState("ktw");
   const [department, setDepartment] = useState("trd");
   // yymm.dd.[office|home|leave].[ktw/tbw/twm].[trd/mis/...]@username
